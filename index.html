@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bio de Meyre</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonte do Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Ícones do Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" crossorigin="anonymous" />
+    <!-- SEO Básico -->
+    <meta name="description" content="Bio de Meyre. Acesse as redes sociais e entre em contato.">
+    <meta name="keywords" content="Meyre, Instagram, Facebook, WhatsApp, Contato">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="header-container">
+            <img src="WhatsApp Image 2024-11-23 at 10.15.52.jpeg" alt="Foto de Perfil de Meyre" class="profile-pic">
+            <h1>Meyre</h1>
+            <p>Conecte-se comigo nas redes sociais!</p>
+        </div>
+    </header>
+
+    <!-- Seção Sobre Mim -->
+    <section id="about">
+        <div class="container">
+            <h2>Sobre Mim</h2>
+            <p>Bem-vindo! Sou Meyre, apaixonada por conectar pessoas e criar momentos especiais. Aqui você encontra meus principais contatos e redes sociais. Fique à vontade para explorar!</p>
+        </div>
+    </section>
+
+    <!-- Seção Links -->
+    <section id="links">
+        <div class="container">
+            <h2>Meus Links</h2>
+            <div class="links-grid">
+                <a href="https://www.instagram.com/meyreelensantos" target="_blank" class="btn"><i class="fab fa-instagram"></i> Instagram</a>
+                <a href="https://www.facebook.com/profile.php?id=100008147613106" target="_blank" class="btn"><i class="fab fa-facebook"></i> Facebook</a>
+                <a href="https://wa.me/+554488487686" target="_blank" class="btn"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>© 2024 Meyre. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- Script de Suavização -->
+    <script>
+        // Suaviza a rolagem ao clicar em links de âncoras
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault(); // Impede o comportamento padrão do link
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth' // Rolagem suave
+                });
+            });
+        });
+    </script>
+</body>
+</html>
